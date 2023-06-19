@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.football-field {
+    position: relative;
+    width: 1000px;
+    height: 100vh;
+    background-image: url(./football.jpg);
+    background-repeat: no-repeat;
+}
+
+.player {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url(./person-fill.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.player1 {
+    top: 270px;
+    left: 50px;
+}
+
+.player2 {
+    top: 200px;
+    left: 300px;
+}
+
+.player3 {
+    top: 450px;
+    left: 600px;
+}
+
+.player4 {
+    top: 120px;
+    left: 650px;
+}
+
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(84, 136, 192);
+    animation: ballAnimation 6s forwards linear;
+}
+
+
+@keyframes ballAnimation {
+    0% {
+        top: 270px;
+        left: 50px;
+    }
+
+    25% {
+        top: 200px;
+        left: 300px;
+    }
+
+    50% {
+        top: 450px;
+        left: 600px;
+    }
+
+    75% {
+        top: 120px;
+        left: 650px;
+    }
+
+    100% {
+        top: 270px;
+        left: 820px;
+    }
+
+}
